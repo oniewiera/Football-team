@@ -129,7 +129,7 @@ button:hover {
     }
 
     .member{
-    grid-template-columns: 1fr;    
+    grid-template-columns: auto;    
     grid-template-areas:
     "photo name name"
     "photo about about"
@@ -144,7 +144,7 @@ button:hover {
 
 @media all and (max-width:600px){
     .member{
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-areas:
     "photo"
      "name"
