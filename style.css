@@ -1,21 +1,29 @@
+:root{
+    --juventusOrange:#fdc600;
+    --juventusGrey: #5b5a55;
+    --juventusWhite: #fff;
+    --backgroundColor: #000;
+
+}
 body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
     font-family: 'Lato', sans-serif;
-    background: #000;
+    background:var(--backgroundColor);
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
 h1 {
     font-size: 3em;
-    color: #fff;
+    color:var(--juventusWhite);
     font-weight: 700;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid var(--juventusOrange);
 }
+
 h2 {
     font-size: 2em;
-    color: #fff;
+    color:var(--juventusWhite);
     font-weight: 700;
     margin: 0;
 }
@@ -23,7 +31,7 @@ h2 {
 p {
   font-size: 1.2em;
   font-weight: 400;
-  color:  #5b5a55;
+  color: var(--juventusGrey);
   text-align: justify;
 }
 
@@ -48,8 +56,6 @@ p {
     margin: 20px 40px;
 }
 
-
-
 .member{
     display:grid;
     justify-items:center;
@@ -60,6 +66,7 @@ p {
     "about"
     "contact";
 }
+
 .about{
     grid-area: about;
 }
@@ -67,15 +74,17 @@ p {
 .name{
     grid-area:name;
 }
+
 .contact{
     grid-area: contact;
 }
+
 .description{
     justify-self: center;
 }
 
 .photo{
-    border:8px solid #5b5a55;
+    border:8px solid var(--juventusGrey);
     border-radius: 50%;
     opacity: 0.6;
     grid-area: photo;
@@ -87,38 +96,36 @@ button {
   width: 150px;
   padding: 20px;
   margin: 30px 0px;
-  color: #fff;
-  border: solid 1px #fff;
+  color: var(--juventusWhite);
+  border: solid 2px var(--juventusOrange);
   height: 60px;
+  color: var(--juventusOrange);
+  font-weight: 700;
   background-color: transparent;
   outline: none;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #fdc600;   
+  background-color: var(--juventusOrange);   
+  font-weight: 600;
+  color: var(--juventusGrey);
 }
-
-h1:hover{
-    color: grey;
-    border-bottom: 1px solid #fdc600;
-}
-
 
 .member:hover .name{
     transition: all 0.2s ease-in-out; 
-    color:#fdc600;
+    color:var(--juventusOrange);
 }
 
 .member:hover p {
-transition: all 0.2s ease-in-out; 
-color:#fff;
+    transition: all 0.2s ease-in-out; 
+    color: var(--juventusWhite);
 }
 
 .member:hover .photo {
     transition: all 0.2s ease-in-out; 
     opacity:1;
-    border: 8px solid #fdc600;
+    border: 8px solid var(--juventusOrange);
 }
 
 @media all and (max-width:730px){
