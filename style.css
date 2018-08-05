@@ -21,14 +21,14 @@ h2 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   color:#b8b8b8;
   margin:0 auto;
 }
 
 .paragraph{
-    margin-bottom: 30px;
+    margin: 30px 50px;
 }
 
 .container{
@@ -36,7 +36,7 @@ p {
     justify-content: center;
     align-items:center;
     position: relative;
-    margin:30px 100px;
+    margin: 30px 50px;
 }
 
 .team{
@@ -77,9 +77,9 @@ p {
 }
 
 .photo{
-    border:4px solid grey;
+    border:8px solid #5b5a55;
     border-radius: 50%;
-    opacity: 0.7;
+    opacity: 0.6;
     grid-area: photo;
 }
 
@@ -109,7 +109,7 @@ h1:hover{
     cursor: pointer;
     transition: all 0.4s ease-in-out; 
     opacity:1;
-    border: 4px solid #fdc600;
+    border: 8px solid #fdc600;
 }
 
 .name:hover{
@@ -118,19 +118,22 @@ h1:hover{
     color:#fdc600;
 }
 
-@media all and (max-width:620px){
+@media all and (max-width:730px){
     .container{
-        margin: 30px 50px;
+        margin: 20px 50px;
     }
     .member{
     grid-template-areas:
-    "photo name"
-    "photo about"
-    "photo contact";
+    "photo name name"
+    "photo about about"
+    "photo contact contact";
     }
 }
 
-@media all and (max-width:520px){
+@media all and (max-width:500px){
+    .container{
+        margin: 15px 20px;
+    }
     .member{
     grid-template-areas:
     "photo"
