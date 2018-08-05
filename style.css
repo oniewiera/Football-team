@@ -140,9 +140,10 @@ button:hover {
     "photo name name"
     "photo about about"
     "photo contact contact";
+    align-content: center;
     }
     .photo{
-        margin-right:30px;
+        margin-right:20px;
     }
 }
 
