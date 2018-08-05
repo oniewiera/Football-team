@@ -24,11 +24,11 @@ p {
   font-size: 1.2em;
   font-weight: 400;
   color:  #5b5a55;
+  text-align: justify;
 }
 
 .paragraph{
     margin: 10px 100px 80px;
-    text-align: justify;
 }
 
 .container{
@@ -61,7 +61,6 @@ p {
     "contact";
 }
 .about{
-    text-align: center;
     grid-area: about;
 }
 
@@ -73,7 +72,6 @@ p {
 }
 .description{
     justify-self: center;
-    text-align: center;
 }
 
 .photo{
@@ -102,23 +100,23 @@ button:hover {
 }
 
 h1:hover{
-    cursor: pointer;
     color: grey;
     border-bottom: 1px solid #fdc600;
 }
 
 
 .member:hover .name{
-    transition: all 0.4s ease-in-out; 
+    transition: all 0.2s ease-in-out; 
     color:#fdc600;
 }
 
 .member:hover p {
+transition: all 0.2s ease-in-out; 
 color:#fff;
 }
 
 .member:hover .photo {
-     transition: all 0.4s ease-in-out; 
+    transition: all 0.2s ease-in-out; 
     opacity:1;
     border: 8px solid #fdc600;
 }
