@@ -123,13 +123,12 @@ button:hover {
     border: 8px solid var(--juventusOrange);
 }
 
-@media all and (max-width:730px){
+@media all and (max-width:729px){
     .container, .paragraph{
         margin: 20px 50px;
     }
 
-    .member{
-    grid-template-columns: auto;    
+    .member{    
     grid-template-areas:
     "photo name name"
     "photo about about"
@@ -144,7 +143,6 @@ button:hover {
 
 @media all and (max-width:600px){
     .member{
-    grid-template-columns: auto;
     grid-template-areas:
     "photo"
      "name"
