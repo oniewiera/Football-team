@@ -23,12 +23,12 @@ h2 {
 p {
   font-size: 1.2em;
   font-weight: 400;
-  color:#b8b8b8;
-  margin:0 auto;
+  color:  #5b5a55;
 }
 
 .paragraph{
-    margin: 30px 50px;
+    margin: 10px 100px 80px;
+    text-align: justify;
 }
 
 .container{
@@ -103,19 +103,24 @@ button:hover {
 
 h1:hover{
     cursor: pointer;
+    color: grey;
     border-bottom: 1px solid #fdc600;
 }
-.photo:hover{
-    cursor: pointer;
-    transition: all 0.4s ease-in-out; 
-    opacity:1;
-    border: 8px solid #fdc600;
-}
 
-.name:hover{
-    cursor: pointer;
+
+.member:hover .name{
     transition: all 0.4s ease-in-out; 
     color:#fdc600;
+}
+
+.member:hover p {
+color:#fff;
+}
+
+.member:hover .photo {
+     transition: all 0.4s ease-in-out; 
+    opacity:1;
+    border: 8px solid #fdc600;
 }
 
 @media all and (max-width:730px){
