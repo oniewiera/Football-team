@@ -124,7 +124,7 @@ button:hover {
 
 @media all and (max-width:820px){
     .container, .paragraph{
-        margin: 4% 6% 6%;
+        margin: 4% 6% 5%;
     }
 
     .member{    
