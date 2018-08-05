@@ -98,7 +98,7 @@ button {
   width: 150px;
   padding: 20px;
   margin: 30px 0px;
-  color: var(--juventusWhite);
+  color: var(--juventusGrey);
   border: solid 2px var(--juventusOrange);
   height: 60px;
   font-weight: 700;
@@ -110,7 +110,7 @@ button:hover {
   cursor: pointer;
   background-color: var(--juventusOrange);   
   font-weight: 600;
-  color: var(--juventusGrey);
+  color: var(--juventusDarkGrey);
 }
 
 .member:hover .name{
@@ -130,12 +130,10 @@ button:hover {
 }
 
 @media all and (max-width:730px){
-    .container{
+    .container, .paragraph{
         margin: 20px 50px;
     }
-    .paragraph{
-        margin: 20px 50px;
-    }
+
     .member{
     grid-template-areas:
     "photo name name"
@@ -143,6 +141,7 @@ button:hover {
     "photo contact contact";
     align-content: center;
     }
+
     .photo{
         margin-right:20px;
     }
@@ -152,6 +151,7 @@ button:hover {
     .container{
         margin: 15px 20px;
     }
+
     .member{
     grid-template-areas:
     "photo"
