@@ -1,10 +1,11 @@
 :root{
     --juventusOrange:#fdc600;
-    --juventusGrey: #5b5a55;
+    --juventusDarkGrey: #5b5a55;
+    --juventusGrey: #9a9a9a;
     --juventusWhite: #fff;
     --backgroundColor: #000;
-
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
+
 h1 {
     font-size: 3em;
     color:var(--juventusWhite);
@@ -84,7 +86,7 @@ p {
 }
 
 .photo{
-    border:8px solid var(--juventusGrey);
+    border:8px solid var(--juventusDarkGrey);
     border-radius: 50%;
     opacity: 0.6;
     grid-area: photo;
@@ -99,7 +101,6 @@ button {
   color: var(--juventusWhite);
   border: solid 2px var(--juventusOrange);
   height: 60px;
-  color: var(--juventusOrange);
   font-weight: 700;
   background-color: transparent;
   outline: none;
