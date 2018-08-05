@@ -36,7 +36,7 @@ p {
 }
 
 .paragraph{
-    margin: 10px 100px 80px;
+    margin: 10px 80px 80px;
 }
 
 .container{
@@ -132,11 +132,17 @@ button:hover {
     .container{
         margin: 20px 50px;
     }
+    .paragraph{
+        margin: 20px 50px;
+    }
     .member{
     grid-template-areas:
     "photo name name"
     "photo about about"
     "photo contact contact";
+    }
+    .photo{
+        margin-right:30px;
     }
 }
 
