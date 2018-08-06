@@ -30,7 +30,7 @@ p {
   font-size: 1.2em;
   font-weight: 400;
   color: var(--juventusGrey);
-  text-align: justify;
+  text-align: center;
 }
 
 .paragraph{
@@ -47,6 +47,7 @@ p {
 
 .team{
     display:grid;
+    -ms-grid-columns:repeat(auto-fill,minmax(300px,1fr));
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-gap: 50px;
     justify-content: center;
@@ -71,6 +72,7 @@ p {
 
 .name{
     grid-area:name;
+    text-align: center;
 }
 
 .contact{
@@ -136,7 +138,7 @@ button:hover {
     }
 
     .photo{
-        margin-right:6%;
+        margin-right:20%;
     }
 }
 
@@ -147,5 +149,9 @@ button:hover {
      "name"
     "about"
     "contact";
+    }
+    
+    .photo{
+        margin-right:0%;
     }
 }
